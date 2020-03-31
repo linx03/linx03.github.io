@@ -1,0 +1,1 @@
+名称：PHPComposer n n非：n Push：n分支：[master]n拉请求：n分支：n构建：n n运行-on：Ubuntu-最新的n个步骤：n-use：action/checkout@v2n-name：ValidalComposer.json和Composer.nrun：Composer验证n n-name：install依赖关系n-name：Composer install-偏好-dist-no-process-no-建议n#向Composer.json添加测试脚本，例如：“测试”：“供应商/bin/phpunit”n#Docs：https://getcomposer.org/doc/articles/scripts.md n n#-name：Run test套件n#run：Composer Run-script test
