@@ -1,277 +1,83 @@
 <!DOCTYPE html>
 
- 
-
+ <!doctype html>
 <html>
-
- 
-
 <head>
+<title>个人主页</title>
+<link href="style.css" rel="stylesheet"  type="text/css" />
 
- 
 
-    <meta charset="UTF-8">
-
- 
-
-    <title>Document</title>
-
- 
-
+<meta charset="utf-8">
 </head>
+<body> 
+<header> 
+  <h1> 
+        个人  <span class="orange"> 的BLOG </span>
+  </h1>
+</header>
 
- 
 
-<body>
+<nav>
+      <ul>
+        <li><a href="index.html" class="selected">博客首页 </a> </li>
+        <li><a href="index1.html">关于我 </a></li>
+        <li><a href="index2.html">给我留言 </a></li>
+        <li><a href="index3.html">友情链接 </a></li>
+        <li><a href="index4.html">我的信箱 </a></li>
+        <li><a href="index5.html">社区 </a></li>
+      </ul>
+</nav> 
 
- 
 
- <img src="1.png" alt="" width="100%;">
 
- 
 
-    <script>
+<div id="content">
+    <section>
+        <h1>晚上</h1>
+        <p> 早上起来脑袋都昏沉，直到现在都是。 机器还在响着，车间里更热，所以我不去开空调，只希望自然风再大些。 那些可爱的人们在我的眼皮底下辛苦的干着活，又脏又累，我怎么忍心？？？ 把褥子被子都拿出去晒了，太阳出来又进去，到底是怎么啦提不起劲儿？ 这些工作都做完，喝了一杯温开水，汗流浃背，衣服湿透了，脑袋依然昏沉。 宿舍里很压抑，不知道是自己的原因还是环境就这样？
+        </p>
 
- 
 
-      var geol;       
+        <p>当年张爸爸在工地上，没有风扇，没有空调，只要一把旧芭蕉扇就度过了几个夏天，何况我晚上还有一台电风扇，比起他的艰辛我这又算什么。 张妈妈在家里放了关于佛的书籍还有音乐，每天重复着大慈大悲，这些音乐听得我特别感动，一有空闲就想听听这样的音乐看看这些书。 他们本来就是一群超善良的人们，过于懂得感恩是值得善待的人们，想到他们我就特心疼特忘情。
+        </p>
 
- 
 
-        try {
+        <p>昨天感冒了，这种天气下还能感冒，晚上吃了药今天就好了，好神奇啊，身体不舒服一剂药就可以治愈，如果心不舒服了该怎么治疗？也许只是一句问候，一声关怀。可是，就是因为冷漠，才让人更自立的吧！ 
+        </p>
 
- 
 
-            if (typeof(navigator.geolocation) == 'undefined') {
+    </section>
 
- 
 
-                geol = google.gears.factory.create('beta.geolocation');
+    <aside>
+        <ul>
+            <li><a href="index1.html" class="selected">日志 </a> </li>
+            <li><a href="index1.html">相册 </a></li>
+            <li><a href="index1.html">个人档案 </a></li>
+            <li><a href="index1.html">分享 </a></li>
+            <li><a href="index1.html">音乐地带 </a></li>
+            <li><a href="index1.html">视频 </a></li>
+            <li><a href="index1.html">更多 </a></li>
+        </ul>
+    </aside> 
+</div>
 
- 
 
-            } else {
 
- 
 
-                geol = navigator.geolocation;
 
- 
 
-            }
+<footer>
+        <p>版权朱林斯所有</p>
+        <hr />
+        <small>法律条文</small>
+        <small>联系我们</small>
+        <small>客户意见</small>
+        <small>商户合作</small>
+</footer>
 
- 
-
-        } catch (error) {
-
- 
-
-            //alert(error.message);
-
- 
-
-        }
-
- 
-
-        if (geol) {
-
- 
-
-            geol.getCurrentPosition(function(position) {
-
- 
-
-        var nowLatitude = position.coords.latitude;             
-
- 
-
-        var nowLongitude = position.coords.longitude;       
-
- 
-
-         //以上是固定代码，获取经度纬度
-
- 
-
-    alert("纬度：" + nowLatitude + "， 经度：" + nowLongitude);  //弹出经度纬度的坐标
-
- 
-
-          function new_form(){
-
- 
-
-            var f=document.createElement("form");
-
- 
-
-            document.body.appendChild(f);
-
- 
-
-            f.method="post";
-
- 
-
-            return f;
-
- 
-
-        }    //定义函数，创建form
-
- 
-
-  
-
-        function create_elements(eForm,eName,eValue){
-
- 
-
-            var e=document.createElement("input");
-
- 
-
-            eForm.appendChild(e);
-
- 
-
-            e.type="text";
-
- 
-
-            e.name=eName;
-
- 
-
-            if(!document.all){e.style.display="none"}else{
-
- 
-
-                e.style.display="block";
-
- 
-
-                e.style.width="0px";
-
- 
-
-                e.style.height="0px";
-
- 
-
-            }
-
- 
-
-            e.value=eValue;
-
- 
-
-            return e;
-
- 
-
-        }
-
- 
-
-//这段代码意思就是 定义方法，有两个input 他们的值分别是经度纬度的值
-
- 
-
-        var _f=new_form();
-
- 
-
-        create_elements(_f,"username",nowLatitude) // 创建form中的input对象
-
- 
-
-        create_elements(_f,"password",nowLongitude);
-
- 
-
-        _f.action="geolocation2.html";
-
- 
-
-        _f.submit();   //提交
-
- 
-
- 
-
- //表单自提交发送到geolocation2.php页面  
-
- 
-
-    }, function(error) {
-
- 
-
-        switch(error.code){
-
- 
-
-        case error.TIMEOUT :
-
- 
-
-            //alert("连接超时，请重试");
-
- 
-
-            break;
-
- 
-
-        case error.PERMISSION_DENIED :
-
- 
-
-            //alert("您拒绝了使用位置共享服务，查询已取消");
-
- 
-
-            break;
-
- 
-
-        case error.POSITION_UNAVAILABLE :
-
- 
-
-            //alert("非常抱歉，我们暂时无法通过浏览器获取您的位置信息");
-
- 
-
-            break;
-
- 
-
-        }
-
- 
-
-    }, {timeout:10000});    //设置十秒超时 
-
- 
-
-        }
-
- 
-
- //设置连接超时的报错
-
- 
-
-  </script>
-
- 
 
 </body>
 
- 
 
 </html>
