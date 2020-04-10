@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="keywords" content="小北IT,玩机,灰度,灰度开源项目,软件库,拾穗集,还你干净的世界" />
+    <meta name="description" content="灰度网页版，轻奢，极简，悦享，还你干净的世界" />
+    <style type="text/css">
+        html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #282828;
+    text-align: center;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    top: -15%;
+
+}
+
+.input,.jkone,.jktwo,.jkthree {
+    width: 90%;
+    font-weight: bold;
+    font-size: 1em;
+    border: 0px;
+    border-color: #282828;
+    border-radius: 35px;
+    margin: 8px;
+}
+
+.input {
+    color: #000000;
+    text-align: center;
+    line-height: 400%;
+    background-color: #FFFAFA;
+}
+
+.jkone,.jktwo,.jkthree {
+    color: #fff;
+    line-height: 400%;
+}
+.jkone {
+    background-color: #1E90FF;
+}
+.jktwo {
+    background-color: #66CD00;
+}
+.jkthree {
+    background-color: #FF7F00;
+}
+    </style>
+    <title>影视迷</title>
+    <link rel="shortcut icon" href="https://xiaobeiit.com/img/huidu/logo.png" />
+</head>
+
+<body>
+    <div class="content">
+        <input type="text" id="text" value="" class="input" />
+        <input type="button" value=" " onclick="jkone()" class="jkone" />
+        <input type="button" value=" " onclick="jktwo()" class="jktwo" />
+        <input type="button" value=" " onclick="jkthree()" class="jkthree" />
+        <script type="text/javascript">
+        	var flag = document.getElementById('text');
+
+            function jkone() {
+            	location.href = "http://jsap.attakids.com/?url=" + document.getElementById("text").value;
+            }
+
+            function jktwo() {
+            	location.href = "http://jx.618g.com/?url=" + document.getElementById("text").value;
+            }
+
+            function jkthree() {
+            	location.href = "https://z1.m1907.cn?jx=" + document.getElementById("text").value;
+            }
+            
+        </script>
+    </div>
+</body>
+
+</html>
