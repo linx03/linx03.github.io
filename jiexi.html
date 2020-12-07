@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>短视频解析 - linx03</title>
+<meta name="keywords" content="短视频解析,一个很有范的工具合集">
+<meta name="description" content="一个集合了众多在线工具的神奇工具箱,集齐了短视频解析、音乐下载解析、风水测算、编程开发、王者空白名、扣扣领赞等超多小工具">
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,300i" rel="stylesheet">
+<!-- Styles -->
+<link href="zb_tools/assets/css/core.min.css" rel="stylesheet">
+<link href="zb_tools/assets/css/app.min.css" rel="stylesheet">
+<link href="zb_tools/assets/css/style.min.css" rel="stylesheet">
+<!-- Favicons -->
+<link rel="apple-touch-icon" href="https://m.qpic.cn/psc?/V125Nsae16TtEF/ruAMsa53pVQWN7FLK88i5gVxi*WaAaeasoPfmR2ZIw9JUFNcemKV73T1DnGTgREqDy*EPfuFDQqi1PK0kCPF7x6QLZbt.UuyPLmWBoM*mqE!/b&ek=1&kp=1&pt=0&bo=ZABkAGQAZAADGTw!&tl=1&vuin=2831328952&tm=1607148000#sce=14-1-1&rf=v1_iph_sq_6.5.0_0_hdbm_t-4-2">
+<link rel="icon" href="https://m.qpic.cn/psc?/V125Nsae16TtEF/ruAMsa53pVQWN7FLK88i5gVxi*WaAaeasoPfmR2ZIw9JUFNcemKV73T1DnGTgREqDy*EPfuFDQqi1PK0kCPF7x6QLZbt.UuyPLmWBoM*mqE!/b&ek=1&kp=1&pt=0&bo=ZABkAGQAZAADGTw!&tl=1&vuin=2831328952&tm=1607148000#sce=14-1-1&rf=v1_iph_sq_6.5.0_0_hdbm_t-4-2">
+</head>
+<body>
+<div class="preloader">
+	<div class="spinner-dots">
+		<span class="dot1"></span>
+		<span class="dot2"></span>
+		<span class="dot3"></span>
+	</div>
+</div>
+<!-- Main container -->
+<main>
+<div class="main-content">
+	<div class="container">
+		<div class="row">
+			<!-- Topbar -->
+			<div class="col-md-12">
+				<header class="text-center py-40">
+				<a href="/">
+				<h1><strong>linx03 -兔二的小工具 <img src="https://m.qpic.cn/psc?/V125Nsae16TtEF/ruAMsa53pVQWN7FLK88i5gVxi*WaAaeasoPfmR2ZIw9JUFNcemKV73T1DnGTgREqDy*EPfuFDQqi1PK0kCPF7x6QLZbt.UuyPLmWBoM*mqE!/b&ek=1&kp=1&pt=0&bo=ZABkAGQAZAADGTw!&tl=1&vuin=2831328952&tm=1607148000#sce=14-1-1&rf=v1_iph_sq_6.5.0_0_hdbm_t-4-2" height="30" width="30"></strong></h1>
+				</a>
+				</header>
+			</div>
+			<!-- END Topbar --><div class="col-md-12">
+	<div class="card card-shadowed">
+		<header class="card-header bg-primary">
+		<h4 class="card-title text-white"><strong>短视频解析下载</strong></h4>
+		</header>
+		<form action="#" onsubmit="return false;" id="Form" role="Form" data-provide="validation" data-disable="true">
+			<div class="card-body form-type-round">
+				<input type="hidden" id="action" value="DVideo">
+				
+				<div class="form-group row">
+					<label class="col-md-2 col-form-label require" for="input-1">解析链接</label>
+					<div class="col-md-10">
+						<input type="text" class="form-control" id="link" name="link" placeholder="🙈请输入您要解析的短视频解析链接..." required data-error="请输入短视频链接">
+						<div class="invalid-feedback">
+						</div>
+					</div>
+				</div>
+				
+				<div class="form-group row">
+					<label class="col-md-2 col-form-label require" for="input-2">解析接口</label>
+					<div class="col-md-10">
+						<select class="form-control" name="type">
+							<option value="0">接口一</option>
+							<option value="1">接口二</option>
+							<option value="2">接口三</option>
+						</select>
+					</div>
+				</div>
+				<footer class="card-footer text-right">
+				<button class="btn btn-outline btn-primary btn-block" type="submit">开始获取</button>
+				<button id="JiYan" style="display:none"></button>
+				</footer>
+			</div>
+		</form>
+	</div>
+</div>
+
+<div class="col-md-12" id="jieguoDiv" style="display:none">
+	<div class="card card-outline-primary">
+		<header class="card-header">
+		<h4 class="card-title"><strong>解析结果</strong></h4>
+		</header>
+		<div class="card-body" id="content">
+		    
+		</div>
+	</div>
+</div>
+
+<div class="col-md-12">
+	<div class="card card-shadowed">
+		<header class="card-header bg-primary">
+		<h4 class="card-title text-white"><strong>说明帮助</strong></h4>
+		</header>
+		<div class="card-body">
+			<ul>
+
+                                <li>🙈本页由linx03维护</li>
+				<li>在上方粘贴短视频链接点击开始获取即可解析</li>
+				<li>请注意链接中不能包含任何中文,否则可能失败</li>
+				<li>解析成功后在单击链接即可直接复制该链接地址</li>
+				<li>本工具支持解析X音、X手、X虾等基本短视频平台</li>
+				<li>部分短视频解析出来不支持播放,直接用下载器下载即可</li>
+				<li>视频版权归相关网站及作者所有,本站不存储任何视频及图片</li>
+			</ul>
+		</div>
+	</div>
+</div>	</div>
+	</div>
+</div>
+<!--/.main-content -->
+<!-- home Button-->
+<div class="fab fab-fixed" style="margin-right:-25px;margin-bottom:-25px;">
+	<a class="btn btn-float btn-primary" href="/"><i class="pe-7s-home"></i></a>
+</div>
+<!-- home Button-->
+</main>
+<!-- END Main container -->
+<!-- Scripts -->
+<span id="cnzz" style="display: none">
+    <script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1279022946'%3E%3C/span%3E%3Cscript src='https://s4.cnzz.com/z_stat.php%3Fid%3D1279022946%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+</span>
+
+<script src="https://www.tool22.com/zb_tools/assets/js/core.min.js"></script>
+<script src="https://www.tool22.com/zb_tools/assets/js/app.min.js"></script>
+<script src="https://www.tool22.com/zb_tools/assets/js/script.min.js"></script>
+<script src="https://lib.baomitu.com/layer/3.1.1/layer.js"></script>
+<script src="https://static.geetest.com/static/tools/gt.js"></script>
+<script src="https://lib.baomitu.com/clipboard.js/1.7.1/clipboard.min.js"></script>
+<script src="https://www.tool22.com/zb_tools/assets/js/main.js?ver=2.2"></script>
+<script src="https://www.tool22.com/zb_tools/assets/js/tools/DVideo.js?ver=1605255603"></script>
+</body>
+</html>
