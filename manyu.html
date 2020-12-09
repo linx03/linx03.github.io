@@ -27,16 +27,6 @@
   <canvas id="canvas" resize></canvas>
   <script type="text/javascript">
 
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-353220-16']);
-    _gaq.push(['_trackPageview']);
-
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-
   </script>
 
   <div id="compat">
@@ -61,27 +51,6 @@
     <textarea id="embed-text">&lt;iframe src=&quot;http://www.staggeringbeauty.com/&quot; style=&quot;border: 1px inset #ddd&quot; width=&quot;498&quot; height=&quot;598&quot;&gt;&lt;/iframe&gt;</textarea>
   </div>
 <script type="text/javascript">
-
-var embedButton = document.getElementById('embed-button');
-var embedShade = document.getElementById('embed');
-var embedText = document.getElementById('embed-text');
-
-embedButton.addEventListener('click', function(e) {
-  e.preventDefault();
-  embedShade.style.display = 'block';
-  return false;
-}, false);
-
-embedShade.addEventListener('click', function() {
-  embedShade.style.display = 'none';
-}, false);
-
-embedText.addEventListener('click', function(e) {
-  e.preventDefault();
-  e.stopPropagation();
-  this.select();
-  return false;
-})
 </script>
 </body>
 </html>
