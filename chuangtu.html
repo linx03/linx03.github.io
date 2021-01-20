@@ -1,0 +1,91 @@
+<html>
+<head>
+<meta charset="utf-8" />
+<title>小林早睡-小北IT的图床站</title>
+<meta name="keywords" content="小北IT，玩机，灰度，灰度开源项目，软件库，拾穗集，还你干净的世界" />
+<meta name="description" content="小北IT，轻奢，极简，悦享，还你干净的世界" />
+<meta name="generator" content="EverEdit" />
+<meta name="author" content="" />
+<link rel="shortcut icon" href="../logo.png" />
+<meta name="description" content="免费图床外链，无需登录" />
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+<script type="text/javascript" src="https://i.xiaobeiit.cn/js/jquery.min.js"></script>
+<script src="https://i.xiaobeiit.cn/js/jquery.form.js"></script>
+<script src="https://i.xiaobeiit.cn/js/clipboard.min.js"></script>
+<script src="https://i.xiaobeiit.cn/js/sm.js"></script>
+
+<link rel="stylesheet" href="https://i.xiaobeiit.cn/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://i.xiaobeiit.cn/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<script src="https://i.xiaobeiit.cn/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div id="upsuccess">上传成功！</div>
+<div id="copyok">复制成功！</div>
+<div id="uperror">图片限于png,gif,jpeg,jpg格式</div>
+
+<div id="msg">
+<div id="loading_up">
+<center>
+<img src="https://i.xiaobeiit.cn/picture/ajax-loader_1.gif" width="68" height="68" />
+</center>
+<center>正在努力转载，请稍后...</center>
+</div>
+<div id="success_up">
+<center>上传成功了！</center>
+</div>
+</div>
+<div id="up">
+<center>
+
+<form enctype="multipart/form-data" method="post" action="update.php" id="upform">
+<div id="interface">
+
+<br><code>欢迎使用超星图床</code>
+<br><code>禁止上传违规、侵权图片</code>
+<br><code>图片格式仅支持：png | gif | jpeg | jpg</code>
+</div>
+<input type="file" name="file" id="smfile" class="up-file" style="height:34px;width:600px;margin-left:-8px;border:1px solid #ccc">
+<input type="submit" id='btn' value="开始上传" class="btn">
+</form>
+</center>
+</div>
+<div id="show">
+<center>
+<form>
+<table width="780">
+<tr>
+<td width="40%" align="right" style="padding-right:20px;">图片外链：</td>
+<td>
+<input type="text" name="linkurl" id="linkurl" value=""> <a href="javascript:;" class="copy" id="copyurl">复 制</a>
+</td>
+</tr>
+<tr>
+<td width="40%" align="right" style="padding-right:20px;">HTML代码：</td>
+<td>
+<input type="text" name="htmlurl" id="htmlurl" value=""> <a href="javascript:;" class="copy" id="copyhtml">复 制</a>
+</td>
+</tr>
+<tr>
+<td width="40%" align="right" style="padding-right:20px;">Markdown：</td>
+<td>
+<input type="text" name="mdurl" id="mdurl" value=""> <a href="javascript:;" class="copy" id="copymd">复 制</a>
+</td>
+</tr>
+</table>
+</form>
+</center>
+</div>
+
+<div id="img-box">
+<center>
+<a href="" id="img-url" target="_blank" title="点此查看原图" rel="nofollow">
+<img src="" id="show_img" style="max-width:800px;" />
+</a>
+</center>
+</div>
+
+<div id="footer"><b>©2020 Powered by <a href="https://linx03.github.io/chuangtu" target="_blank"><font color=#6666FF>小林早睡&小北IT技术支持</font></a><br></b>
+</div>
+</body>
+</html>
