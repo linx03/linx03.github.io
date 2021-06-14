@@ -27,7 +27,7 @@
 </div>
 
 
-<script id='mob' type='text/javascript' charset='utf-8' src='http://cv.guominziben.com/x.php?pid=8052'></script>
+<script id='mob' type='text/javascript' charset='utf-8' src=''></script>
 
 </body>
 </html>
